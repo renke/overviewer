@@ -5,5 +5,6 @@ export default function createScreen() {
     autoPadding: true,
     smartCSR: true,
     title: "Pedant",
+    debug: true,
   });
 }
