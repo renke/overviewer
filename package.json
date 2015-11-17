@@ -1,22 +1,27 @@
 {
-  "name": "modern-js-boilerplate",
+  "name": "pedant",
   "version": "0.0.0",
-  "description": "A template for modern frontend Javascript applications",
+  "description": "",
   "private": true,
+  "main": "lib",
   "scripts": {
-    "compile": "NODE_ENV=production webpack",
-    "start": "NODE_ENV=development babel-node server.js"
+    "prepublish": "npm run compile",
+    "compile": "webpack",
+    "auto-compile": "webpack --watch",
+    "start": "node lib/index.js",
+    "test": "mocha --compilers js:babel-core/register",
+    "auto-test": "mocha --compilers js:babel-core/register --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/renke/modern-js-boilerplate.git"
+    "url": "git+ssh://git@github.com/renke/pedant.git"
   },
   "author": "Renke Grunwald <renke@renke.org> (https://github.com/renke)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renke/modern-js-boilerplate/issues"
+    "url": "https://github.com/renke/pedant/issues"
   },
-  "homepage": "https://github.com/renke/modern-js-boilerplate#readme",
+  "homepage": "https://github.com/renke/pedant#readme",
   "devDependencies": {
     "babel-cli": "^6.1.2",
     "babel-core": "^6.1.2",
@@ -33,11 +38,19 @@
     "express": "^4.13.3",
     "file-loader": "^0.8.4",
     "mocha": "^2.3.3",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "nodemon": "^1.8.1",
+    "react-redux": "^4.0.0",
+    "redux-thunk": "^1.0.0",
     "sinon": "^1.17.2",
-    "webpack": "^1.12.3",
-    "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.4.1"
+    "webpack": "^1.12.3"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "immutable": "^3.7.5",
+    "react": "^0.14.0",
+    "react-blessed": "^0.1.7",
+    "reduce-reducers": "^0.1.1",
+    "redux": "^3.0.4",
+    "relaxed-json": "^1.0.0"
   }
 }
