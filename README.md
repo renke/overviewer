@@ -1,7 +1,7 @@
-pedant
+Overviewer
 ======
 
-**pedant** lets you view the output of multiple programs at the same time. It also shows if a program failed or succeeded by using an appropriately colored border.
+**overviewer** lets you view the output of multiple programs at the same time. It also shows if a program failed or succeeded by using an appropriately colored border.
 
 ![Screenshot](doc/screenshot.png)
 
@@ -9,19 +9,19 @@ pedant
 
 **Global**:
 
-`npm install -g pedant`
+`npm install -g overviewer`
 
-Use `pedant` to start it.
+Use `overviewer` to start it.
 
 **Local**:
 
-`npm install --save-dev pedant`
+`npm install --save-dev overviewer`
 
-This is the preferred way if you want integrate pedant into your project's development workflow because it will be installed automatically for others that work on your project.
+This is the preferred way if you want integrate overviewer into your project's development workflow because it will be installed automatically for others that work on your project.
 
 ## Usage ##
 
-Use `pedant` to start it when you installed globally and `./node_modules/.bin/pedant` when you installed it locally.
+Use `overviewer` to start it when you installed globally and `./node_modules/.bin/overviewer` when you installed it locally.
 
 Keybinding        | Action
 ------------------| -------------
@@ -31,11 +31,11 @@ Shift-Tab         | Focus previous output
 Up                | Scroll up
 Down              | Scroll down
 
-** You must have a `.pedantrc` in the working directory. See below. **
+** You must have a `.overviewerrc` in the working directory. See below. **
 
 ## Configuration ##
 
-To specify which programs should be run by pedant a `.pedantrc` file has to be created.
+To specify which programs should be run by overviewer a `.overviewerrc` file has to be created.
 
 **Example**:
 

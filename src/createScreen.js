@@ -4,7 +4,6 @@ export default function createScreen() {
   return blessed.screen({
     autoPadding: true,
     smartCSR: true,
-    title: "Pedant",
-    debug: true,
+    title: "Overviewer",
   });
 }

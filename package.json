@@ -1,5 +1,5 @@
 {
-  "name": "pedant",
+  "name": "overviewer",
   "version": "0.1.1",
   "description": "",
   "main": "lib",
@@ -12,18 +12,18 @@
     "auto-test": "mocha --compilers js:babel-core/register --watch"
   },
   "bin": {
-    "pedant": "lib/index.js"
+    "overviewer": "lib/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/renke/pedant.git"
+    "url": "git+ssh://git@github.com/renke/overviewer.git"
   },
   "author": "Renke Grunwald <renke@renke.org> (https://github.com/renke)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renke/pedant/issues"
+    "url": "https://github.com/renke/overviewer/issues"
   },
-  "homepage": "https://github.com/renke/pedant#readme",
+  "homepage": "https://github.com/renke/overviewer#readme",
   "devDependencies": {
     "babel-cli": "^6.1.18",
     "babel-core": "^6.1.2",

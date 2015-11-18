@@ -4,7 +4,7 @@ import {parse} from "relaxed-json";
 export const LOAD_REPORTERS = "LOAD_REPORTERS";
 // export const SET_LAYOUT = "SET_LAYOUT";
 
-const CONFIG_FILE_NAME = ".pedantrc";
+const CONFIG_FILE_NAME = ".overviewerrc";
 
 function readConfig() {
   return new Promise((resolve, reject) => {
