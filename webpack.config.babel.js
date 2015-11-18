@@ -11,8 +11,10 @@ plugins = [
   // new webpack.HotModuleReplacementPlugin(),
   new webpack.NoErrorsPlugin(),
 
+
   new webpack.BannerPlugin('require("source-map-support").install();', { raw: true, entryOnly: false }),
   new webpack.BannerPlugin('require("babel-polyfill");', { raw: true, entryOnly: true }),
+  new webpack.BannerPlugin("#!/usr/bin/env node\n", { raw: true, entryOnly: true }),  
 ];
 
 module.exports = {

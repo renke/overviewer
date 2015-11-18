@@ -44,18 +44,20 @@
     "mocha": "^2.3.3",
     "nodemon": "^1.8.1",
     "npm-check-updates": "^2.4.2",
-    "react-redux": "^4.0.0",
-    "redux-thunk": "^1.0.0",
     "sinon": "^1.17.2",
     "webpack": "^1.12.3"
   },
   "dependencies": {
+    "babel-polyfill": "^6.1.19",
+    "react-redux": "^4.0.0",
+    "redux-thunk": "^1.0.0",
     "blessed": "^0.1.81",
     "immutable": "^3.7.5",
     "react": "^0.14.0",
     "react-blessed": "^0.1.7",
     "reduce-reducers": "^0.1.1",
     "redux": "^3.0.4",
-    "relaxed-json": "^1.0.0"
+    "relaxed-json": "^1.0.0",
+    "source-map-support": "^0.3.3"
   }
 }
