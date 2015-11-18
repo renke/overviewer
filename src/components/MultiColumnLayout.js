@@ -13,12 +13,13 @@ export default class SingleColumnLayout extends Component {
   render() {
     const {reporters} = this.props;
 
+    const numberOfColumns = 1;
+
     const columns = groupBy(reporters, (reporter, index) => {
-      return index % 2;
+      return index % numberOfColumns;
     });
 
-    const numberOfColumns = 2;
-    let reportBoxes = [];
+    const reportBoxes = [];
 
     for (let i = 0; i < numberOfColumns; i++) {
       const column = columns[i];
@@ -43,7 +44,7 @@ export default class SingleColumnLayout extends Component {
         const reportBox = <box height={height} top={top}
                               left={left} width={width}
                               key={`${i}.${j}`}>
-                              
+
           <ReportBox reporter={reporter} report={report}
                      selected={selected} onSelect={() => this.props.onSelectReporter(reporter)}/>
         </box>;
