@@ -31,7 +31,7 @@ Shift-Tab         | Focus previous output
 Up                | Scroll up
 Down              | Scroll down
 
-** You must have a `.overviewerrc` in the working directory. See below. **
+**You must have a `.overviewerrc` in the working directory. See below.**
 
 ## Configuration ##
 
