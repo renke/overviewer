@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SingleColumnLayout from "./SingleColumnLayout";
+
 import MultiColumnLayout from "./MultiColumnLayout";
 
 export default class LayoutBox extends Component {
@@ -9,9 +9,13 @@ export default class LayoutBox extends Component {
 
   render() {
     return <box>
-      <MultiColumnLayout reports={this.props.reports} reporters={this.props.reporters}
-                          selectedReporter={this.props.selectedReporter}
-                          onSelectReporter={this.props.onSelectReporter}/>
+      <MultiColumnLayout
+        numberOfColumns={2}
+        reports={this.props.reports}
+        reporters={this.props.reporters}
+        selectedReporter={this.props.selectedReporter}
+        onSelectReporter={this.props.onSelectReporter}
+      />
     </box>;
   }
 }

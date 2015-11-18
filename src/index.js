@@ -18,6 +18,6 @@ store.dispatch(start()).then(() => {
 
   render(root, screen);
 }).catch(err => {
-  console.err(err);
+  console.error(err.message);
   process.exit(1);
 });

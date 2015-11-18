@@ -1,0 +1,30 @@
+{
+  "reporters": [
+    {
+      "title": "Linting",
+      "command": "node_modules/.bin/eslint src --color",
+    },
+
+    {
+      "title": "Babel Doctor",
+      "command": "node_modules/.bin/babel-doctor --colors",
+      "failure": "Found potential issues on your machine",
+    },
+
+    {
+      "title": "Dependency Usage Analysis",
+      "command": "node_modules/.bin/depcheck --dev false",
+    },
+
+    {
+      "title": "Test",
+      "command": "npm test",
+    },
+
+    {
+      "title": "Dependency Update Analysis",
+      "command": "node_modules/.bin/ncu --error-level 2",
+      "success": "All dependencies match",
+    },
+  ],
+}

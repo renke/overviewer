@@ -5,15 +5,13 @@ import groupBy from "lodash.groupby";
 
 import ReportBox from "./ReportBox";
 
-export default class SingleColumnLayout extends Component {
+export default class MultiColumnLayout extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    const {reporters} = this.props;
-
-    const numberOfColumns = 1;
+    const {reporters, numberOfColumns} = this.props;
 
     const columns = groupBy(reporters, (reporter, index) => {
       return index % numberOfColumns;
@@ -58,3 +56,5 @@ export default class SingleColumnLayout extends Component {
     </box>;
   }
 }
+
+MultiColumnLayout.defaultProps = {numberOfColumns: 2};

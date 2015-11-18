@@ -3,7 +3,6 @@ import {connect} from "react-redux";
 
 import LogBoxContainer from "../components/LogBoxContainer";
 import ReportsContainer from "../components/ReportsContainer";
-import {start} from "../actions/app";
 import {nextReport, previousReport} from "../actions/navigation";
 
 class App extends Component {
