@@ -1,6 +1,6 @@
 {
   "name": "overviewer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "View the output of multiple programs at the same time",
   "main": "lib",
   "scripts": {
