@@ -6,6 +6,11 @@
     },
 
     {
+      "title": "TODO",
+      "command": "! ag --context=2 --heading --color 'TODO:|FIXME:' | sed 's/\\[K//g'",
+    },
+
+    {
       "title": "Babel Doctor",
       "command": "node_modules/.bin/babel-doctor --colors",
       "failure": "Found potential issues on your machine",

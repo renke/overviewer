@@ -18,6 +18,7 @@ store.dispatch(start()).then(() => {
 
   render(root, screen);
 }).catch(err => {
+  // TODO: Better error message
   console.error(err.message);
   process.exit(1);
 });
