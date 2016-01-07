@@ -21,8 +21,12 @@ export function startReporter(reporter) {
 
     const child = spawn(command, args, {pwd: process.cwd(), stdio:[0]});
 
+    const killChild = () => child.kill();
+    process.on("exit", killChild);
+
     child.on("error", error => {
       log(`Failed to start reporter '${reporter.title}'`);
+      process.removeListener("exit", killChild);
 
       dispatch({
         type: START_REPORTER_FAILURE,
@@ -35,6 +39,7 @@ export function startReporter(reporter) {
 
     child.stdout.on("data", data => {
       log(`Received stdout data from reporter '${reporter.title}'`);
+      process.removeListener("exit", killChild);
 
       dispatch({
         type: RECEIVE_REPORT_DATA,
