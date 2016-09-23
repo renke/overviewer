@@ -1,3 +1,5 @@
+__ATTENTION: This repository is currently unmaintained.__
+
 # Overviewer
 
 *overviewer* lets you view the output of multiple programs at the same time. It also shows if a program failed or succeeded by using an appropriately colored border.
